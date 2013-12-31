@@ -21,14 +21,14 @@
     for (NSString *key in keys) {
         
         NSString *capitalizedKey = [key stringByReplacingCharactersInRange:NSMakeRange(0,1) withString:[[key substringToIndex:1] capitalizedString]];
-        SEL property = NSSelectorFromString([NSString stringWithFormat:@"setLayout%@:",capitalizedKey]);
+        SEL property = NSSelectorFromString([NSString stringWithFormat:@"setDictionaryLayout%@:",capitalizedKey]);
         if ([self respondsToSelector:property]) {
             IMP imp = [self methodForSelector:property];
             void (*func)(id, SEL, NSObject*) = (void *)imp;
             func(self, property, layout[key]);
         }
         else{
-            [NSException raise:@"Unknown property" format:@"Property '%@' is unknown", key];
+            [NSException raise:@"Unknown property" format:@"Property '%@' is unknown for class %@", key, self.class];
         }
     }
 }

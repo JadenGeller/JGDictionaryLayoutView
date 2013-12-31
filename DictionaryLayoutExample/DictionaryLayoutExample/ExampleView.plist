@@ -4,6 +4,24 @@
 <dict>
 	<key>color</key>
 	<string>#FF1111</string>
+	<key>subviews</key>
+	<array>
+		<dict>
+			<key>color</key>
+			<string>#00FF00AA</string>
+			<key>position</key>
+			<dict>
+				<key>left</key>
+				<string>.2</string>
+				<key>right</key>
+				<string>.5</string>
+				<key>top</key>
+				<string>0</string>
+				<key>bottom</key>
+				<string>.8</string>
+			</dict>
+		</dict>
+	</array>
 	<key>position</key>
 	<dict>
 		<key>left</key>

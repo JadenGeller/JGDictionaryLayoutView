@@ -1,5 +1,5 @@
 //
-//  JGDictionaryLayoutView+Base.m
+//  UIView+LayoutBase.m
 //
 //  Created by Jaden Geller on 12/29/13.
 //  Copyright (c) 2013 Jaden Geller. All rights reserved.
@@ -15,7 +15,7 @@
 
 @implementation UIView (LayoutBase)
 
--(void)setLayoutColor:(NSObject*)obj{
+-(void)setDictionaryLayoutColor:(NSObject*)obj{
     if (!obj) {
         self.backgroundColor = nil;
     }
@@ -24,7 +24,7 @@
     }
 }
 
--(void)setLayoutTag:(NSObject*)obj{
+-(void)setDictionaryLayoutTag:(NSObject*)obj{
     if (!obj) {
         self.tag = 0;
     }
@@ -33,7 +33,7 @@
     }
 }
 
--(void)setLayoutAlpha:(NSObject*)obj{
+-(void)setDictionaryLayoutAlpha:(NSObject*)obj{
     if (!obj) {
         self.alpha = 1;
     }
@@ -42,7 +42,7 @@
     }
 }
 
--(void)setLayoutOpaque:(NSObject*)obj{
+-(void)setDictionaryLayoutOpaque:(NSObject*)obj{
     if (!obj) {
         self.opaque = YES;
     }
@@ -51,7 +51,7 @@
     }
 }
 
--(void)setLayoutSubviews:(NSObject*)obj{
+-(void)setDictionaryLayoutSubviews:(NSObject*)obj{
     [self.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
     
     if ([NSException assertObject:obj isKindOfClass:[NSArray class] forProperty:@"subviews"]) {
@@ -61,13 +61,15 @@
             }
             
             UIView *subview = [[UIView alloc]init];
-            subview.layout = subviewLayout;
             [self addSubview:subview];
+            
+            // Set layout after added so constraints can be added to superview
+            subview.layout = subviewLayout;
         }
     }
 }
 
--(void)setLayoutDepth:(NSObject*)obj{
+-(void)setDictionaryLayoutDepth:(NSObject*)obj{
 
     if ([self respondsToSelector:@selector(motionEffects)]) {
         
@@ -86,7 +88,7 @@
     }
 }
 
--(void)setLayoutPosition:(NSObject*)obj{
+-(void)setDictionaryLayoutPosition:(NSObject*)obj{
     // Remove all constraints from superview pertaining to self
     for (NSLayoutConstraint *constraint in self.superview.constraints) {
         if (constraint.firstItem == self || constraint.secondItem == self) {
