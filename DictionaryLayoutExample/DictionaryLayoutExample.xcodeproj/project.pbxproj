@@ -29,11 +29,11 @@
 		D73C1C2E18727DD400E3A769 /* UIView+LayoutBase.m in Sources */ = {isa = PBXBuildFile; fileRef = D73C1C2D18727DD400E3A769 /* UIView+LayoutBase.m */; };
 		D73C1C3118727DDD00E3A769 /* UIView+DictionaryLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D73C1C3018727DDD00E3A769 /* UIView+DictionaryLayout.m */; };
 		D73C1C3318727DF000E3A769 /* ExampleView.plist in Resources */ = {isa = PBXBuildFile; fileRef = D73C1C3218727DF000E3A769 /* ExampleView.plist */; };
-		D73C1C361872809000E3A769 /* UILabel+LayoutBase.m in Sources */ = {isa = PBXBuildFile; fileRef = D73C1C351872809000E3A769 /* UILabel+LayoutBase.m */; };
 		D73C1C3C1872843600E3A769 /* NSAttributedString+Creation.m in Sources */ = {isa = PBXBuildFile; fileRef = D73C1C3B1872843600E3A769 /* NSAttributedString+Creation.m */; };
-		D73C1C3F1872926E00E3A769 /* NSAttributedString+Attributes.m in Sources */ = {isa = PBXBuildFile; fileRef = D73C1C3E1872926E00E3A769 /* NSAttributedString+Attributes.m */; };
-		D73C1C4218729A7E00E3A769 /* UIFont+Creation.m in Sources */ = {isa = PBXBuildFile; fileRef = D73C1C4118729A7E00E3A769 /* UIFont+Creation.m */; };
-		D73C1C451872A59B00E3A769 /* NSShadow+Creation.m in Sources */ = {isa = PBXBuildFile; fileRef = D73C1C441872A59B00E3A769 /* NSShadow+Creation.m */; };
+		D73C1C481872AD9400E3A769 /* NSAttributedString+Attributes.m in Sources */ = {isa = PBXBuildFile; fileRef = D73C1C471872AD9300E3A769 /* NSAttributedString+Attributes.m */; };
+		D73C1C4D1872AD9D00E3A769 /* NSShadow+Creation.m in Sources */ = {isa = PBXBuildFile; fileRef = D73C1C4A1872AD9D00E3A769 /* NSShadow+Creation.m */; };
+		D73C1C4E1872AD9D00E3A769 /* UIFont+Creation.m in Sources */ = {isa = PBXBuildFile; fileRef = D73C1C4C1872AD9D00E3A769 /* UIFont+Creation.m */; };
+		D73C1C511872ADA900E3A769 /* UILabel+LayoutBase.m in Sources */ = {isa = PBXBuildFile; fileRef = D73C1C501872ADA900E3A769 /* UILabel+LayoutBase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,16 +81,16 @@
 		D73C1C2F18727DDD00E3A769 /* UIView+DictionaryLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+DictionaryLayout.h"; path = "../UIView+DictionaryLayout/UIView+DictionaryLayout.h"; sourceTree = "<group>"; };
 		D73C1C3018727DDD00E3A769 /* UIView+DictionaryLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+DictionaryLayout.m"; path = "../UIView+DictionaryLayout/UIView+DictionaryLayout.m"; sourceTree = "<group>"; };
 		D73C1C3218727DF000E3A769 /* ExampleView.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ExampleView.plist; sourceTree = "<group>"; };
-		D73C1C341872809000E3A769 /* UILabel+LayoutBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+LayoutBase.h"; sourceTree = "<group>"; };
-		D73C1C351872809000E3A769 /* UILabel+LayoutBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+LayoutBase.m"; sourceTree = "<group>"; };
 		D73C1C3A1872843600E3A769 /* NSAttributedString+Creation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSAttributedString+Creation.h"; path = "../UIView+DictionaryLayout/Other Categories/NSAttributedString+Creation.h"; sourceTree = "<group>"; };
 		D73C1C3B1872843600E3A769 /* NSAttributedString+Creation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSAttributedString+Creation.m"; path = "../UIView+DictionaryLayout/Other Categories/NSAttributedString+Creation.m"; sourceTree = "<group>"; };
-		D73C1C3D1872926E00E3A769 /* NSAttributedString+Attributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+Attributes.h"; sourceTree = "<group>"; };
-		D73C1C3E1872926E00E3A769 /* NSAttributedString+Attributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+Attributes.m"; sourceTree = "<group>"; };
-		D73C1C4018729A7E00E3A769 /* UIFont+Creation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Creation.h"; sourceTree = "<group>"; };
-		D73C1C4118729A7E00E3A769 /* UIFont+Creation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Creation.m"; sourceTree = "<group>"; };
-		D73C1C431872A59B00E3A769 /* NSShadow+Creation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSShadow+Creation.h"; sourceTree = "<group>"; };
-		D73C1C441872A59B00E3A769 /* NSShadow+Creation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSShadow+Creation.m"; sourceTree = "<group>"; };
+		D73C1C461872AD9300E3A769 /* NSAttributedString+Attributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSAttributedString+Attributes.h"; path = "../UIView+DictionaryLayout/Other Categories/NSAttributedString+Attributes.h"; sourceTree = "<group>"; };
+		D73C1C471872AD9300E3A769 /* NSAttributedString+Attributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSAttributedString+Attributes.m"; path = "../UIView+DictionaryLayout/Other Categories/NSAttributedString+Attributes.m"; sourceTree = "<group>"; };
+		D73C1C491872AD9D00E3A769 /* NSShadow+Creation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSShadow+Creation.h"; path = "../UIView+DictionaryLayout/Other Categories/NSShadow+Creation.h"; sourceTree = "<group>"; };
+		D73C1C4A1872AD9D00E3A769 /* NSShadow+Creation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSShadow+Creation.m"; path = "../UIView+DictionaryLayout/Other Categories/NSShadow+Creation.m"; sourceTree = "<group>"; };
+		D73C1C4B1872AD9D00E3A769 /* UIFont+Creation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIFont+Creation.h"; path = "../UIView+DictionaryLayout/Other Categories/UIFont+Creation.h"; sourceTree = "<group>"; };
+		D73C1C4C1872AD9D00E3A769 /* UIFont+Creation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIFont+Creation.m"; path = "../UIView+DictionaryLayout/Other Categories/UIFont+Creation.m"; sourceTree = "<group>"; };
+		D73C1C4F1872ADA900E3A769 /* UILabel+LayoutBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UILabel+LayoutBase.h"; path = "../UIView+DictionaryLayout/Other Categories/UILabel+LayoutBase.h"; sourceTree = "<group>"; };
+		D73C1C501872ADA900E3A769 /* UILabel+LayoutBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+LayoutBase.m"; path = "../UIView+DictionaryLayout/Other Categories/UILabel+LayoutBase.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,8 +208,8 @@
 			children = (
 				D73C1C2C18727DD400E3A769 /* UIView+LayoutBase.h */,
 				D73C1C2D18727DD400E3A769 /* UIView+LayoutBase.m */,
-				D73C1C341872809000E3A769 /* UILabel+LayoutBase.h */,
-				D73C1C351872809000E3A769 /* UILabel+LayoutBase.m */,
+				D73C1C4F1872ADA900E3A769 /* UILabel+LayoutBase.h */,
+				D73C1C501872ADA900E3A769 /* UILabel+LayoutBase.m */,
 			);
 			name = "Layout Categories";
 			sourceTree = "<group>";
@@ -223,16 +223,16 @@
 				D73C1C2018727DCC00E3A769 /* NSException+Assertion.m */,
 				D73C1C3A1872843600E3A769 /* NSAttributedString+Creation.h */,
 				D73C1C3B1872843600E3A769 /* NSAttributedString+Creation.m */,
-				D73C1C3D1872926E00E3A769 /* NSAttributedString+Attributes.h */,
-				D73C1C3E1872926E00E3A769 /* NSAttributedString+Attributes.m */,
+				D73C1C461872AD9300E3A769 /* NSAttributedString+Attributes.h */,
+				D73C1C471872AD9300E3A769 /* NSAttributedString+Attributes.m */,
 				D73C1C2118727DCC00E3A769 /* NSLayoutConstraint+Creation.h */,
 				D73C1C2218727DCC00E3A769 /* NSLayoutConstraint+Creation.m */,
 				D73C1C2318727DCC00E3A769 /* UIColor+Creation.h */,
 				D73C1C2418727DCC00E3A769 /* UIColor+Creation.m */,
-				D73C1C4018729A7E00E3A769 /* UIFont+Creation.h */,
-				D73C1C4118729A7E00E3A769 /* UIFont+Creation.m */,
-				D73C1C431872A59B00E3A769 /* NSShadow+Creation.h */,
-				D73C1C441872A59B00E3A769 /* NSShadow+Creation.m */,
+				D73C1C491872AD9D00E3A769 /* NSShadow+Creation.h */,
+				D73C1C4A1872AD9D00E3A769 /* NSShadow+Creation.m */,
+				D73C1C4B1872AD9D00E3A769 /* UIFont+Creation.h */,
+				D73C1C4C1872AD9D00E3A769 /* UIFont+Creation.m */,
 				D73C1C2518727DCC00E3A769 /* UIInterpolatingMotionEffect+Creation.h */,
 				D73C1C2618727DCC00E3A769 /* UIInterpolatingMotionEffect+Creation.m */,
 			);
@@ -339,20 +339,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				D73C1C2918727DCC00E3A769 /* NSLayoutConstraint+Creation.m in Sources */,
-				D73C1C3F1872926E00E3A769 /* NSAttributedString+Attributes.m in Sources */,
+				D73C1C511872ADA900E3A769 /* UILabel+LayoutBase.m in Sources */,
+				D73C1C4D1872AD9D00E3A769 /* NSShadow+Creation.m in Sources */,
 				D73C1BF218727D8200E3A769 /* main.m in Sources */,
 				D73C1C2B18727DCC00E3A769 /* UIInterpolatingMotionEffect+Creation.m in Sources */,
 				D73C1C2818727DCC00E3A769 /* NSException+Assertion.m in Sources */,
-				D73C1C4218729A7E00E3A769 /* UIFont+Creation.m in Sources */,
 				D73C1C2E18727DD400E3A769 /* UIView+LayoutBase.m in Sources */,
-				D73C1C361872809000E3A769 /* UILabel+LayoutBase.m in Sources */,
 				D73C1C2718727DCC00E3A769 /* NSDictionary+Loading.m in Sources */,
 				D73C1C3C1872843600E3A769 /* NSAttributedString+Creation.m in Sources */,
 				D73C1C3118727DDD00E3A769 /* UIView+DictionaryLayout.m in Sources */,
 				D73C1BFC18727D8200E3A769 /* JGViewController.m in Sources */,
+				D73C1C481872AD9400E3A769 /* NSAttributedString+Attributes.m in Sources */,
 				D73C1C2A18727DCC00E3A769 /* UIColor+Creation.m in Sources */,
-				D73C1C451872A59B00E3A769 /* NSShadow+Creation.m in Sources */,
 				D73C1BF618727D8200E3A769 /* JGAppDelegate.m in Sources */,
+				D73C1C4E1872AD9D00E3A769 /* UIFont+Creation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
