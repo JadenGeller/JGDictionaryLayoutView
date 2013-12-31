@@ -7,6 +7,7 @@
 //
 
 #import "JGViewController.h"
+#import "JGDictionaryLayoutView.h"
 
 @interface JGViewController ()
 
@@ -18,6 +19,13 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    JGDictionaryLayoutView *view = [[JGDictionaryLayoutView alloc]init];
+    
+    // Add subview before setting layout so that constraints can be added
+    [self.view addSubview:view];
+    
+    view.layout = [NSDictionary dictionaryWithFileName:@"ExampleView"];
 }
 
 - (void)didReceiveMemoryWarning
