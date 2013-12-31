@@ -21,14 +21,14 @@
 		D7CA2EF0187120370066A6B0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7CA2ED2187120370066A6B0 /* UIKit.framework */; };
 		D7CA2EF8187120370066A6B0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D7CA2EF6187120370066A6B0 /* InfoPlist.strings */; };
 		D7CA2EFA187120370066A6B0 /* JGDictionaryLayoutViewExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7CA2EF9187120370066A6B0 /* JGDictionaryLayoutViewExampleTests.m */; };
-		D7CA2F08187121110066A6B0 /* JGDictionaryLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7CA2F07187121110066A6B0 /* JGDictionaryLayoutView.m */; };
-		D7CA2F12187131BD0066A6B0 /* JGDictionaryLayoutView+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = D7CA2F10187131BD0066A6B0 /* JGDictionaryLayoutView+Base.m */; };
+		D7CA2F12187131BD0066A6B0 /* UIView+LayoutBase.m in Sources */ = {isa = PBXBuildFile; fileRef = D7CA2F10187131BD0066A6B0 /* UIView+LayoutBase.m */; };
 		D7CA2F5B18716C970066A6B0 /* UIColor+Creation.m in Sources */ = {isa = PBXBuildFile; fileRef = D7CA2F5A18716C970066A6B0 /* UIColor+Creation.m */; };
-		D7CA2F64187178720066A6B0 /* NSValue+Class.m in Sources */ = {isa = PBXBuildFile; fileRef = D7CA2F63187178720066A6B0 /* NSValue+Class.m */; };
 		D7CA2F6718720BF10066A6B0 /* NSLayoutConstraint+Creation.m in Sources */ = {isa = PBXBuildFile; fileRef = D7CA2F6618720BF10066A6B0 /* NSLayoutConstraint+Creation.m */; };
 		D7CA2F6A187244130066A6B0 /* UIInterpolatingMotionEffect+Creation.m in Sources */ = {isa = PBXBuildFile; fileRef = D7CA2F69187244130066A6B0 /* UIInterpolatingMotionEffect+Creation.m */; };
 		D7CA2F6C187245B20066A6B0 /* ExampleView.plist in Resources */ = {isa = PBXBuildFile; fileRef = D7CA2F6B187245B20066A6B0 /* ExampleView.plist */; };
 		D7CA2F6F187246900066A6B0 /* NSDictionary+Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = D7CA2F6E187246900066A6B0 /* NSDictionary+Loading.m */; };
+		D7CA2F74187269730066A6B0 /* NSException+Assertion.m in Sources */ = {isa = PBXBuildFile; fileRef = D7CA2F73187269730066A6B0 /* NSException+Assertion.m */; };
+		D7CA2F7A18726D240066A6B0 /* UIView+DictionaryLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D7CA2F7918726D240066A6B0 /* UIView+DictionaryLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,14 +61,10 @@
 		D7CA2EF5187120370066A6B0 /* JGDictionaryLayoutViewExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JGDictionaryLayoutViewExampleTests-Info.plist"; sourceTree = "<group>"; };
 		D7CA2EF7187120370066A6B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D7CA2EF9187120370066A6B0 /* JGDictionaryLayoutViewExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JGDictionaryLayoutViewExampleTests.m; sourceTree = "<group>"; };
-		D7CA2F06187121110066A6B0 /* JGDictionaryLayoutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JGDictionaryLayoutView.h; path = ../../JGDictionaryLayoutView.h; sourceTree = "<group>"; };
-		D7CA2F07187121110066A6B0 /* JGDictionaryLayoutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JGDictionaryLayoutView.m; path = ../../JGDictionaryLayoutView.m; sourceTree = "<group>"; };
-		D7CA2F0F187131BD0066A6B0 /* JGDictionaryLayoutView+Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "JGDictionaryLayoutView+Base.h"; path = "../../JGDictionaryLayoutView+Base.h"; sourceTree = "<group>"; };
-		D7CA2F10187131BD0066A6B0 /* JGDictionaryLayoutView+Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "JGDictionaryLayoutView+Base.m"; path = "../../JGDictionaryLayoutView+Base.m"; sourceTree = "<group>"; };
+		D7CA2F0F187131BD0066A6B0 /* UIView+LayoutBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+LayoutBase.h"; path = "../../UIView+LayoutBase.h"; sourceTree = "<group>"; };
+		D7CA2F10187131BD0066A6B0 /* UIView+LayoutBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+LayoutBase.m"; path = "../../UIView+LayoutBase.m"; sourceTree = "<group>"; };
 		D7CA2F5918716C970066A6B0 /* UIColor+Creation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Creation.h"; sourceTree = "<group>"; };
 		D7CA2F5A18716C970066A6B0 /* UIColor+Creation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Creation.m"; sourceTree = "<group>"; };
-		D7CA2F62187178720066A6B0 /* NSValue+Class.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValue+Class.h"; sourceTree = "<group>"; };
-		D7CA2F63187178720066A6B0 /* NSValue+Class.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValue+Class.m"; sourceTree = "<group>"; };
 		D7CA2F6518720BF10066A6B0 /* NSLayoutConstraint+Creation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+Creation.h"; sourceTree = "<group>"; };
 		D7CA2F6618720BF10066A6B0 /* NSLayoutConstraint+Creation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+Creation.m"; sourceTree = "<group>"; };
 		D7CA2F68187244130066A6B0 /* UIInterpolatingMotionEffect+Creation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIInterpolatingMotionEffect+Creation.h"; sourceTree = "<group>"; };
@@ -76,6 +72,10 @@
 		D7CA2F6B187245B20066A6B0 /* ExampleView.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ExampleView.plist; path = ../ExampleView.plist; sourceTree = "<group>"; };
 		D7CA2F6D187246900066A6B0 /* NSDictionary+Loading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Loading.h"; sourceTree = "<group>"; };
 		D7CA2F6E187246900066A6B0 /* NSDictionary+Loading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Loading.m"; sourceTree = "<group>"; };
+		D7CA2F72187269730066A6B0 /* NSException+Assertion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSException+Assertion.h"; sourceTree = "<group>"; };
+		D7CA2F73187269730066A6B0 /* NSException+Assertion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSException+Assertion.m"; sourceTree = "<group>"; };
+		D7CA2F7818726D240066A6B0 /* UIView+DictionaryLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+DictionaryLayout.h"; path = "../UIView+DictionaryLayout.h"; sourceTree = "<group>"; };
+		D7CA2F7918726D240066A6B0 /* UIView+DictionaryLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+DictionaryLayout.m"; path = "../UIView+DictionaryLayout.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,23 +180,39 @@
 		D7CA2F09187121160066A6B0 /* JGDictionaryLayoutView */ = {
 			isa = PBXGroup;
 			children = (
-				D7CA2F06187121110066A6B0 /* JGDictionaryLayoutView.h */,
-				D7CA2F07187121110066A6B0 /* JGDictionaryLayoutView.m */,
-				D7CA2F0F187131BD0066A6B0 /* JGDictionaryLayoutView+Base.h */,
-				D7CA2F10187131BD0066A6B0 /* JGDictionaryLayoutView+Base.m */,
+				D7CA2F7818726D240066A6B0 /* UIView+DictionaryLayout.h */,
+				D7CA2F7918726D240066A6B0 /* UIView+DictionaryLayout.m */,
+				D7CA2F7B187276390066A6B0 /* Layout Extensions */,
+				D7CA2F7C187276580066A6B0 /* Other Extensions */,
+			);
+			name = JGDictionaryLayoutView;
+			path = JGDictionaryLayoutViewExample;
+			sourceTree = "<group>";
+		};
+		D7CA2F7B187276390066A6B0 /* Layout Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D7CA2F0F187131BD0066A6B0 /* UIView+LayoutBase.h */,
+				D7CA2F10187131BD0066A6B0 /* UIView+LayoutBase.m */,
+			);
+			name = "Layout Extensions";
+			sourceTree = "<group>";
+		};
+		D7CA2F7C187276580066A6B0 /* Other Extensions */ = {
+			isa = PBXGroup;
+			children = (
 				D7CA2F68187244130066A6B0 /* UIInterpolatingMotionEffect+Creation.h */,
 				D7CA2F69187244130066A6B0 /* UIInterpolatingMotionEffect+Creation.m */,
 				D7CA2F6518720BF10066A6B0 /* NSLayoutConstraint+Creation.h */,
 				D7CA2F6618720BF10066A6B0 /* NSLayoutConstraint+Creation.m */,
 				D7CA2F5918716C970066A6B0 /* UIColor+Creation.h */,
 				D7CA2F5A18716C970066A6B0 /* UIColor+Creation.m */,
-				D7CA2F62187178720066A6B0 /* NSValue+Class.h */,
-				D7CA2F63187178720066A6B0 /* NSValue+Class.m */,
 				D7CA2F6D187246900066A6B0 /* NSDictionary+Loading.h */,
 				D7CA2F6E187246900066A6B0 /* NSDictionary+Loading.m */,
+				D7CA2F72187269730066A6B0 /* NSException+Assertion.h */,
+				D7CA2F73187269730066A6B0 /* NSException+Assertion.m */,
 			);
-			name = JGDictionaryLayoutView;
-			path = JGDictionaryLayoutViewExample;
+			name = "Other Extensions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,16 +314,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7CA2F7A18726D240066A6B0 /* UIView+DictionaryLayout.m in Sources */,
 				D7CA2F5B18716C970066A6B0 /* UIColor+Creation.m in Sources */,
+				D7CA2F74187269730066A6B0 /* NSException+Assertion.m in Sources */,
 				D7CA2EDB187120370066A6B0 /* main.m in Sources */,
 				D7CA2EE5187120370066A6B0 /* JGViewController.m in Sources */,
-				D7CA2F12187131BD0066A6B0 /* JGDictionaryLayoutView+Base.m in Sources */,
+				D7CA2F12187131BD0066A6B0 /* UIView+LayoutBase.m in Sources */,
 				D7CA2F6718720BF10066A6B0 /* NSLayoutConstraint+Creation.m in Sources */,
 				D7CA2EDF187120370066A6B0 /* JGAppDelegate.m in Sources */,
 				D7CA2F6F187246900066A6B0 /* NSDictionary+Loading.m in Sources */,
-				D7CA2F64187178720066A6B0 /* NSValue+Class.m in Sources */,
 				D7CA2F6A187244130066A6B0 /* UIInterpolatingMotionEffect+Creation.m in Sources */,
-				D7CA2F08187121110066A6B0 /* JGDictionaryLayoutView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,22 +17,10 @@
 +(NSArray*)constraintsWithDictionary:(NSDictionary*)dictionary view:(UIView*)subview forHorizontal:(BOOL)horizontal{
     
     // Check to make sure properties used are defined
-    NSArray *definedHorizontal = @[@"left",@"right",@"centerX",@"width"];
-    NSArray *definedVertical = @[@"top",@"bottom",@"centerY",@"height"];
-    
-    NSUInteger horizontalCount = 0;
-    NSUInteger verticalCount = 0;
-    
+    NSArray *defined = @[@"left",@"right",@"centerX",@"width",@"top",@"bottom",@"centerY",@"height"];
+
     for (NSString *key in dictionary) {
-        if ([definedHorizontal containsObject:key]) {
-            horizontalCount++;
-            if (horizontalCount > 2) [NSException raise:@"Invalid position" format:@"Contraditory horizontal layout constraints"];
-        }
-        else if([definedVertical containsObject:key]){
-            verticalCount++;
-            if (verticalCount > 2) [NSException raise:@"Invalid position" format:@"Contraditory horizontal layout constraints"];
-        }
-        else{
+        if (![defined containsObject:key]) {
             [NSException raise:@"Invalid position property" format:@"Position property '%@' is not a valid position property",key];
         }
     }

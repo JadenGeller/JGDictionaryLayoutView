@@ -89,6 +89,7 @@ const CGFloat kMaxColorValue = 256.0;
 
 #pragma mark - Private Methods
 
+// Not a category because, if the number is nil, we don't want it to return nil
 +(CGFloat)verifiedFloatWithNumber:(NSNumber*)number max:(CGFloat)max min:(CGFloat)min defaultVal:(CGFloat)defaultVal identifier:(NSString*)identifier{
     if (!number) {
         return defaultVal;

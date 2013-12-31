@@ -5,9 +5,9 @@
 //  Copyright (c) 2013 Jaden Geller. All rights reserved.
 //
 
-#import "JGDictionaryLayoutView.h"
+#import <UIKit/UIKit.h>
 
-@interface JGDictionaryLayoutView (Base)
+@interface UIView (LayoutBase)
 
 -(void)setLayoutColor:(NSObject*)obj;
 -(void)setLayoutTag:(NSObject*)obj;
