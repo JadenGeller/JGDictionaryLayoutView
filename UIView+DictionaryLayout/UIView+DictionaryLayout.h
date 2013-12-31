@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NSDictionary+Loading.h"
 
 @interface UIView (DictionaryLayout)
 

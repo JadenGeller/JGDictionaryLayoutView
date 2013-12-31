@@ -7,6 +7,7 @@
 
 #import "UIView+LayoutBase.h"
 
+#import "UIView+DictionaryLayout.h"
 #import "UIColor+Creation.h"
 #import "NSLayoutConstraint+Creation.h"
 #import "UIInterpolatingMotionEffect+Creation.h"
@@ -59,7 +60,7 @@
                 [NSException raise:@"Bad subview type" format:@"Subviews should be of type NSDictionary but it is of type '%@'", subviewLayout.class];
             }
             
-            JGDictionaryLayoutView *subview = [[JGDictionaryLayoutView alloc]init];
+            UIView *subview = [[UIView alloc]init];
             subview.layout = subviewLayout;
             [self addSubview:subview];
         }
