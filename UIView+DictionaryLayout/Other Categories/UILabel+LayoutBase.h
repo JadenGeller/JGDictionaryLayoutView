@@ -10,6 +10,5 @@
 @interface UILabel (LayoutBase)
 
 -(void)setDictionaryText:(NSObject*)obj;
--(void)setDictionaryFont:(NSObject*)obj;
 
 @end

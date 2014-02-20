@@ -20,8 +20,4 @@
     }
 }
 
--(void)setDictionaryFont:(NSObject*)obj{
-    
-}
-
 @end
