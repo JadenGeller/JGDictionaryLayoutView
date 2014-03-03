@@ -11,7 +11,7 @@
 @implementation UIFont (Creation)
 
 +(UIFont*)fontWithObject:(NSObject*)object{
-    
+    return [UIFont systemFontOfSize:10]; // TODO
 }
 
 @end
