@@ -9,6 +9,8 @@
 		<dict>
 			<key>color</key>
 			<string>#00FF00AA</string>
+			<key>text</key>
+			<string>Hello</string>
 			<key>position</key>
 			<dict>
 				<key>left</key>

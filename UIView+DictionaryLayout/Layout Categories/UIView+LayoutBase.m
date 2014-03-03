@@ -13,6 +13,8 @@
 #import "UIInterpolatingMotionEffect+Creation.h"
 #import "NSException+Assertion.h"
 
+#import "JGSubviewHelper.h"
+
 @implementation UIView (LayoutBase)
 
 -(void)setDictionaryLayoutColor:(NSObject*)obj{
@@ -59,8 +61,11 @@
             if (![subviewLayout isKindOfClass:[NSDictionary class]]) {
                 [NSException raise:@"Bad subview type" format:@"Subviews should be of type NSDictionary but it is of type '%@'", subviewLayout.class];
             }
-            
-            UIView *subview = [[UIView alloc]init];
+            Class subviewClass = [JGSubviewHelper classForSubviewKeys:subviewLayout.allKeys];
+            if (![subviewClass isSubclassOfClass:[UIView class]]) {
+                [NSException raise:@"Invalid subview class" format:@"Subview class must inherit from UIView"];
+            }
+            UIView *subview = [[subviewClass alloc]init];
             [self addSubview:subview];
             
             // Set layout after added so constraints can be added to superview

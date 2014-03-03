@@ -34,6 +34,7 @@
 		D73C1C4D1872AD9D00E3A769 /* NSShadow+Creation.m in Sources */ = {isa = PBXBuildFile; fileRef = D73C1C4A1872AD9D00E3A769 /* NSShadow+Creation.m */; };
 		D73C1C4E1872AD9D00E3A769 /* UIFont+Creation.m in Sources */ = {isa = PBXBuildFile; fileRef = D73C1C4C1872AD9D00E3A769 /* UIFont+Creation.m */; };
 		D73C1C511872ADA900E3A769 /* UILabel+LayoutBase.m in Sources */ = {isa = PBXBuildFile; fileRef = D73C1C501872ADA900E3A769 /* UILabel+LayoutBase.m */; };
+		D7B6695718C45C9100488AC4 /* JGSubviewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B6695618C45C9100488AC4 /* JGSubviewHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,8 @@
 		D73C1C4C1872AD9D00E3A769 /* UIFont+Creation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIFont+Creation.m"; path = "../UIView+DictionaryLayout/Other Categories/UIFont+Creation.m"; sourceTree = "<group>"; };
 		D73C1C4F1872ADA900E3A769 /* UILabel+LayoutBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UILabel+LayoutBase.h"; path = "../UIView+DictionaryLayout/Other Categories/UILabel+LayoutBase.h"; sourceTree = "<group>"; };
 		D73C1C501872ADA900E3A769 /* UILabel+LayoutBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+LayoutBase.m"; path = "../UIView+DictionaryLayout/Other Categories/UILabel+LayoutBase.m"; sourceTree = "<group>"; };
+		D7B6695518C45C9100488AC4 /* JGSubviewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGSubviewHelper.h; sourceTree = "<group>"; };
+		D7B6695618C45C9100488AC4 /* JGSubviewHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGSubviewHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +200,8 @@
 			children = (
 				D73C1C2F18727DDD00E3A769 /* UIView+DictionaryLayout.h */,
 				D73C1C3018727DDD00E3A769 /* UIView+DictionaryLayout.m */,
+				D7B6695518C45C9100488AC4 /* JGSubviewHelper.h */,
+				D7B6695618C45C9100488AC4 /* JGSubviewHelper.m */,
 				D73C1C1C18727DBE00E3A769 /* Other Categories */,
 				D73C1C1B18727DB500E3A769 /* Layout Categories */,
 			);
@@ -340,6 +345,7 @@
 			files = (
 				D73C1C2918727DCC00E3A769 /* NSLayoutConstraint+Creation.m in Sources */,
 				D73C1C511872ADA900E3A769 /* UILabel+LayoutBase.m in Sources */,
+				D7B6695718C45C9100488AC4 /* JGSubviewHelper.m in Sources */,
 				D73C1C4D1872AD9D00E3A769 /* NSShadow+Creation.m in Sources */,
 				D73C1BF218727D8200E3A769 /* main.m in Sources */,
 				D73C1C2B18727DCC00E3A769 /* UIInterpolatingMotionEffect+Creation.m in Sources */,

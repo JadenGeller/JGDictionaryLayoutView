@@ -11,7 +11,7 @@
 
 @implementation UILabel (LayoutBase)
 
--(void)setDictionaryText:(NSObject*)obj{
+-(void)setDictionaryLayoutText:(NSObject*)obj{
     if (!obj) {
         self.text = nil;
     }

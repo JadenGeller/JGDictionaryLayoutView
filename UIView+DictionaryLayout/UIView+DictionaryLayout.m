@@ -7,7 +7,6 @@
 //
 
 #import "UIView+DictionaryLayout.h"
-#import "UIView+LayoutBase.h"
 
 @implementation UIView (DictionaryLayout)
 
@@ -15,6 +14,7 @@
     [self setLayout:layout withReusedProperties:nil];
 }
 
+// Set defaults for reuse
 -(void)setLayout:(NSDictionary *)layout withReusedProperties:(NSSet *)reusedProperties{
     
     NSSet *keys = [[NSSet setWithArray:layout.allKeys] setByAddingObjectsFromSet:reusedProperties];
@@ -31,6 +31,10 @@
             [NSException raise:@"Unknown property" format:@"Property '%@' is unknown for class %@", key, self.class];
         }
     }
+}
+
+-(void)prepareForReuse{
+    [self.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
 }
 
 @end

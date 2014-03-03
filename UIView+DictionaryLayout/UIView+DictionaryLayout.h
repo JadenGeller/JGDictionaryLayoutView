@@ -14,4 +14,6 @@
 -(void)setLayout:(NSDictionary *)layout;
 -(void)setLayout:(NSDictionary *)layout withReusedProperties:(NSSet *)reusedProperties;
 
+-(void)prepareForReuse;
+
 @end

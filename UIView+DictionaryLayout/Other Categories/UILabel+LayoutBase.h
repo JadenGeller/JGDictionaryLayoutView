@@ -9,6 +9,6 @@
 
 @interface UILabel (LayoutBase)
 
--(void)setDictionaryText:(NSObject*)obj;
+-(void)setDictionaryLayoutText:(NSObject*)obj;
 
 @end
