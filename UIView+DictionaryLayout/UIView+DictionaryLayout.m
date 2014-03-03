@@ -7,6 +7,7 @@
 //
 
 #import "UIView+DictionaryLayout.h"
+#import "JGDictionaryAlias.h"
 
 @implementation UIView (DictionaryLayout)
 
@@ -19,8 +20,9 @@
     
     NSSet *keys = [[NSSet setWithArray:layout.allKeys] setByAddingObjectsFromSet:reusedProperties];
     for (NSString *key in keys) {
-        
-        NSString *capitalizedKey = [key stringByReplacingCharactersInRange:NSMakeRange(0,1) withString:[[key substringToIndex:1] capitalizedString]];
+        NSString *keyFromAlias = [JGDictionaryAlias keyForAlias:key];
+        NSString *capitalizedKey = [keyFromAlias stringByReplacingCharactersInRange:NSMakeRange(0,1) withString:[[keyFromAlias substringToIndex:1] capitalizedString]];
+
         SEL property = NSSelectorFromString([NSString stringWithFormat:@"setDictionaryLayout%@:",capitalizedKey]);
         if ([self respondsToSelector:property]) {
             IMP imp = [self methodForSelector:property];
@@ -28,7 +30,7 @@
             func(self, property, layout[key]);
         }
         else{
-            [NSException raise:@"Unknown property" format:@"Property '%@' is unknown for class %@", key, self.class];
+            [NSException raise:@"Unknown property" format:@"Property '%@' is unknown for class %@", keyFromAlias, self.class];
         }
     }
 }

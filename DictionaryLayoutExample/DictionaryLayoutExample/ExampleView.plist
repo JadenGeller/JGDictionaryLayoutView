@@ -12,17 +12,16 @@
 			<key>text</key>
 			<dict>
 				<key>foregroundColor</key>
-				<string>green</string>
+				<string>blue</string>
 				<key>text</key>
 				<string>HELLO</string>
-				<key>link</key>
-				<string>http://google.com</string>
-				<key>obliqueness</key>
-				<integer>2</integer>
-				<key>strikethroughStyle</key>
-				<string>single</string>
-				<key>strokeWidth</key>
-				<integer>2</integer>
+				<key>font</key>
+				<dict>
+					<key>fontName</key>
+					<string>AmericanTypewriter-Bold</string>
+					<key>size</key>
+					<string>50</string>
+				</dict>
 			</dict>
 			<key>position</key>
 			<dict>

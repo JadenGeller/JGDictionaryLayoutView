@@ -11,27 +11,28 @@
 #import "UIFont+Creation.h"
 #import "NSException+Assertion.h"
 #import "NSShadow+Creation.h"
+#import "NSString+DictionaryLayoutAlias.h"
 
 @implementation NSAttributedString (Attributes)
 
 +(NSString*)stringForAttributeIdentifier:(NSString*)identifier{
-    if ([identifier isEqualToString:@"font"]) return NSFontAttributeName;
-    else if ([identifier isEqualToString:@"foregroundColor"]) return NSForegroundColorAttributeName;
-    else if ([identifier isEqualToString:@"backgroundColor"]) return NSBackgroundColorAttributeName;
-    else if ([identifier isEqualToString:@"ligature"]) return NSLigatureAttributeName;
-    else if ([identifier isEqualToString:@"kern"]) return NSKernAttributeName;
-    else if ([identifier isEqualToString:@"strikethroughStyle"]) return NSStrikethroughStyleAttributeName;
-    else if ([identifier isEqualToString:@"underlineStyle"]) return NSUnderlineStyleAttributeName;
-    else if ([identifier isEqualToString:@"strokeColor"]) return NSStrokeColorAttributeName;
-    else if ([identifier isEqualToString:@"strokeWidth"]) return NSStrokeWidthAttributeName;
-    else if ([identifier isEqualToString:@"shadow"]) return NSShadowAttributeName;
-    else if ([identifier isEqualToString:@"textEffect"]) return NSTextEffectAttributeName;
-    else if ([identifier isEqualToString:@"link"]) return NSLinkAttributeName;
-    else if ([identifier isEqualToString:@"baselineOffset"]) return NSBaselineOffsetAttributeName;
-    else if ([identifier isEqualToString:@"underlineColor"]) return NSUnderlineColorAttributeName;
-    else if ([identifier isEqualToString:@"strikethroughColor"]) return NSStrikethroughStyleAttributeName;
-    else if ([identifier isEqualToString:@"obliqueness"]) return NSObliquenessAttributeName;
-    else if ([identifier isEqualToString:@"expansion"]) return NSExpansionAttributeName;
+    if      ([identifier isEqualOrAliased:@"font"]) return NSFontAttributeName;
+    else if ([identifier isEqualOrAliased:@"foregroundColor"]) return NSForegroundColorAttributeName;
+    else if ([identifier isEqualOrAliased:@"backgroundColor"]) return NSBackgroundColorAttributeName;
+    else if ([identifier isEqualOrAliased:@"ligature"]) return NSLigatureAttributeName;
+    else if ([identifier isEqualOrAliased:@"kern"]) return NSKernAttributeName;
+    else if ([identifier isEqualOrAliased:@"strikethroughStyle"]) return NSStrikethroughStyleAttributeName;
+    else if ([identifier isEqualOrAliased:@"underlineStyle"]) return NSUnderlineStyleAttributeName;
+    else if ([identifier isEqualOrAliased:@"strokeColor"]) return NSStrokeColorAttributeName;
+    else if ([identifier isEqualOrAliased:@"strokeWidth"]) return NSStrokeWidthAttributeName;
+    else if ([identifier isEqualOrAliased:@"shadow"]) return NSShadowAttributeName;
+    else if ([identifier isEqualOrAliased:@"textEffect"]) return NSTextEffectAttributeName;
+    else if ([identifier isEqualOrAliased:@"link"]) return NSLinkAttributeName;
+    else if ([identifier isEqualOrAliased:@"baselineOffset"]) return NSBaselineOffsetAttributeName;
+    else if ([identifier isEqualOrAliased:@"underlineColor"]) return NSUnderlineColorAttributeName;
+    else if ([identifier isEqualOrAliased:@"strikethroughColor"]) return NSStrikethroughStyleAttributeName;
+    else if ([identifier isEqualOrAliased:@"obliqueness"]) return NSObliquenessAttributeName;
+    else if ([identifier isEqualOrAliased:@"expansion"]) return NSExpansionAttributeName;
     else return nil;
 }
 
@@ -115,7 +116,7 @@
 
 +(NSObject*)getTextEffectObject:(NSObject*)obj{
     if ([NSException assertObject:obj isKindOfClass:[NSString class] forProperty:@"text effect"]) {
-        if ([(NSString*)obj isEqualToString:@"letterpress"]) return NSTextEffectLetterpressStyle;
+        if ([(NSString*)obj isEqualOrAliased:@"letterpress"]) return NSTextEffectLetterpressStyle;
         else{
             [NSException raise:@"Unknown text effect" format:@"Text effect '%@' is not a valid text effect",(NSString*)obj];
         }
@@ -172,16 +173,16 @@
 //}
 
 +(NSUnderlineStyle)underlineStyleWithString:(NSString*)string{
-    if ([string isEqualToString:@"none"]) return NSUnderlineStyleNone;
-    else if([string isEqualToString:@"single"]) return NSUnderlineStyleSingle;
-    else if([string isEqualToString:@"thick"]) return NSUnderlineStyleThick;
-    else if([string isEqualToString:@"double"]) return NSUnderlineStyleDouble;
-    else if([string isEqualToString:@"solid"]) return NSUnderlinePatternSolid;
-    else if([string isEqualToString:@"dot"]) return NSUnderlinePatternSolid;
-    else if([string isEqualToString:@"dash"]) return NSUnderlinePatternDash;
-    else if([string isEqualToString:@"dashDot"]) return NSUnderlinePatternDashDot;
-    else if([string isEqualToString:@"dashDotDot"]) return NSUnderlinePatternDashDotDot;
-    else if([string isEqualToString:@"byWord"]) return NSUnderlineByWord;
+    if ([string isEqualOrAliased:@"none"]) return NSUnderlineStyleNone;
+    else if([string isEqualOrAliased:@"single"]) return NSUnderlineStyleSingle;
+    else if([string isEqualOrAliased:@"thick"]) return NSUnderlineStyleThick;
+    else if([string isEqualOrAliased:@"double"]) return NSUnderlineStyleDouble;
+    else if([string isEqualOrAliased:@"solid"]) return NSUnderlinePatternSolid;
+    else if([string isEqualOrAliased:@"dot"]) return NSUnderlinePatternSolid;
+    else if([string isEqualOrAliased:@"dash"]) return NSUnderlinePatternDash;
+    else if([string isEqualOrAliased:@"dashDot"]) return NSUnderlinePatternDashDot;
+    else if([string isEqualOrAliased:@"dashDotDot"]) return NSUnderlinePatternDashDotDot;
+    else if([string isEqualOrAliased:@"byWord"]) return NSUnderlineByWord;
     else{
         [NSException raise:@"Bad underline/strikethrough style" format:@"Style '%@' is invalid for strikethrough/underline", string];
         return 0;

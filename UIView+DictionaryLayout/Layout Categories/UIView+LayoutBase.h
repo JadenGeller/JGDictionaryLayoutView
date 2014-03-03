@@ -16,5 +16,6 @@
 -(void)setDictionaryLayoutSubviews:(NSObject*)obj;
 -(void)setDictionaryLayoutDepth:(NSObject*)obj;
 -(void)setDictionaryLayoutPosition:(NSObject*)obj;
+-(void)setDictionaryLayoutTransform3D:(NSObject*)obj;
 
 @end
