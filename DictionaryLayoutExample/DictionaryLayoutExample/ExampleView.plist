@@ -17,7 +17,7 @@
 				<string>HELLO</string>
 				<key>font</key>
 				<dict>
-					<key>fontName</key>
+					<key>name</key>
 					<string>AmericanTypewriter-Bold</string>
 					<key>size</key>
 					<string>50</string>

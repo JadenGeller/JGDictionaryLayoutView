@@ -22,8 +22,6 @@
     // add all associations here
     // [self assocateAlias:@"aliasThing" toKey:@"realThing"];
     
-    [self assocateAlias:@"fontName" toKey:@"name"];
-    [self assocateAlias:@"dog" toKey:@"color"];
 }
 
 +(JGDictionaryAlias*)sharedInstance{

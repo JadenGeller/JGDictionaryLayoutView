@@ -34,11 +34,11 @@
 		D73C1C4D1872AD9D00E3A769 /* NSShadow+Creation.m in Sources */ = {isa = PBXBuildFile; fileRef = D73C1C4A1872AD9D00E3A769 /* NSShadow+Creation.m */; };
 		D73C1C4E1872AD9D00E3A769 /* UIFont+Creation.m in Sources */ = {isa = PBXBuildFile; fileRef = D73C1C4C1872AD9D00E3A769 /* UIFont+Creation.m */; };
 		D73C1C511872ADA900E3A769 /* UILabel+LayoutBase.m in Sources */ = {isa = PBXBuildFile; fileRef = D73C1C501872ADA900E3A769 /* UILabel+LayoutBase.m */; };
-		D7B6695718C45C9100488AC4 /* JGSubviewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B6695618C45C9100488AC4 /* JGSubviewHelper.m */; };
-		D7B6695D18C4FB1700488AC4 /* UIView+DictionaryLayoutAlias.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B6695C18C4FB1700488AC4 /* UIView+DictionaryLayoutAlias.m */; };
-		D7B6696018C4FC9B00488AC4 /* NSString+DictionaryLayoutAlias.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B6695F18C4FC9B00488AC4 /* NSString+DictionaryLayoutAlias.m */; };
-		D7B6696318C4FF1100488AC4 /* NSDictionary+DictionaryLayoutAlias.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B6696218C4FF1100488AC4 /* NSDictionary+DictionaryLayoutAlias.m */; };
-		D7B6696A18C507F200488AC4 /* JGDictionaryAlias.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B6696918C507F200488AC4 /* JGDictionaryAlias.m */; };
+		D7B6698218C50D6D00488AC4 /* JGDictionaryAlias.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B6697B18C50D6D00488AC4 /* JGDictionaryAlias.m */; };
+		D7B6698318C50D6D00488AC4 /* NSDictionary+DictionaryLayoutAlias.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B6697D18C50D6D00488AC4 /* NSDictionary+DictionaryLayoutAlias.m */; };
+		D7B6698418C50D6D00488AC4 /* NSString+DictionaryLayoutAlias.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B6697F18C50D6D00488AC4 /* NSString+DictionaryLayoutAlias.m */; };
+		D7B6698518C50D6D00488AC4 /* UIView+DictionaryLayoutAlias.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B6698118C50D6D00488AC4 /* UIView+DictionaryLayoutAlias.m */; };
+		D7B6698818C50D7700488AC4 /* JGSubviewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B6698718C50D7700488AC4 /* JGSubviewHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,16 +96,16 @@
 		D73C1C4C1872AD9D00E3A769 /* UIFont+Creation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIFont+Creation.m"; path = "../UIView+DictionaryLayout/Other Categories/UIFont+Creation.m"; sourceTree = "<group>"; };
 		D73C1C4F1872ADA900E3A769 /* UILabel+LayoutBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UILabel+LayoutBase.h"; path = "../UIView+DictionaryLayout/Other Categories/UILabel+LayoutBase.h"; sourceTree = "<group>"; };
 		D73C1C501872ADA900E3A769 /* UILabel+LayoutBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+LayoutBase.m"; path = "../UIView+DictionaryLayout/Other Categories/UILabel+LayoutBase.m"; sourceTree = "<group>"; };
-		D7B6695518C45C9100488AC4 /* JGSubviewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGSubviewHelper.h; sourceTree = "<group>"; };
-		D7B6695618C45C9100488AC4 /* JGSubviewHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGSubviewHelper.m; sourceTree = "<group>"; };
-		D7B6695B18C4FB1700488AC4 /* UIView+DictionaryLayoutAlias.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DictionaryLayoutAlias.h"; sourceTree = "<group>"; };
-		D7B6695C18C4FB1700488AC4 /* UIView+DictionaryLayoutAlias.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DictionaryLayoutAlias.m"; sourceTree = "<group>"; };
-		D7B6695E18C4FC9B00488AC4 /* NSString+DictionaryLayoutAlias.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DictionaryLayoutAlias.h"; sourceTree = "<group>"; };
-		D7B6695F18C4FC9B00488AC4 /* NSString+DictionaryLayoutAlias.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DictionaryLayoutAlias.m"; sourceTree = "<group>"; };
-		D7B6696118C4FF1100488AC4 /* NSDictionary+DictionaryLayoutAlias.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+DictionaryLayoutAlias.h"; sourceTree = "<group>"; };
-		D7B6696218C4FF1100488AC4 /* NSDictionary+DictionaryLayoutAlias.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+DictionaryLayoutAlias.m"; sourceTree = "<group>"; };
-		D7B6696818C507F200488AC4 /* JGDictionaryAlias.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGDictionaryAlias.h; sourceTree = "<group>"; };
-		D7B6696918C507F200488AC4 /* JGDictionaryAlias.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGDictionaryAlias.m; sourceTree = "<group>"; };
+		D7B6697A18C50D6D00488AC4 /* JGDictionaryAlias.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JGDictionaryAlias.h; path = "../UIView+DictionaryLayout/Alias/JGDictionaryAlias.h"; sourceTree = "<group>"; };
+		D7B6697B18C50D6D00488AC4 /* JGDictionaryAlias.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JGDictionaryAlias.m; path = "../UIView+DictionaryLayout/Alias/JGDictionaryAlias.m"; sourceTree = "<group>"; };
+		D7B6697C18C50D6D00488AC4 /* NSDictionary+DictionaryLayoutAlias.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+DictionaryLayoutAlias.h"; path = "../UIView+DictionaryLayout/Alias/NSDictionary+DictionaryLayoutAlias.h"; sourceTree = "<group>"; };
+		D7B6697D18C50D6D00488AC4 /* NSDictionary+DictionaryLayoutAlias.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+DictionaryLayoutAlias.m"; path = "../UIView+DictionaryLayout/Alias/NSDictionary+DictionaryLayoutAlias.m"; sourceTree = "<group>"; };
+		D7B6697E18C50D6D00488AC4 /* NSString+DictionaryLayoutAlias.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+DictionaryLayoutAlias.h"; path = "../UIView+DictionaryLayout/Alias/NSString+DictionaryLayoutAlias.h"; sourceTree = "<group>"; };
+		D7B6697F18C50D6D00488AC4 /* NSString+DictionaryLayoutAlias.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+DictionaryLayoutAlias.m"; path = "../UIView+DictionaryLayout/Alias/NSString+DictionaryLayoutAlias.m"; sourceTree = "<group>"; };
+		D7B6698018C50D6D00488AC4 /* UIView+DictionaryLayoutAlias.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+DictionaryLayoutAlias.h"; path = "../UIView+DictionaryLayout/Alias/UIView+DictionaryLayoutAlias.h"; sourceTree = "<group>"; };
+		D7B6698118C50D6D00488AC4 /* UIView+DictionaryLayoutAlias.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+DictionaryLayoutAlias.m"; path = "../UIView+DictionaryLayout/Alias/UIView+DictionaryLayoutAlias.m"; sourceTree = "<group>"; };
+		D7B6698618C50D7700488AC4 /* JGSubviewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JGSubviewHelper.h; path = "../UIView+DictionaryLayout/Layout Categories/JGSubviewHelper.h"; sourceTree = "<group>"; };
+		D7B6698718C50D7700488AC4 /* JGSubviewHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JGSubviewHelper.m; path = "../UIView+DictionaryLayout/Layout Categories/JGSubviewHelper.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,8 +226,8 @@
 				D73C1C2D18727DD400E3A769 /* UIView+LayoutBase.m */,
 				D73C1C4F1872ADA900E3A769 /* UILabel+LayoutBase.h */,
 				D73C1C501872ADA900E3A769 /* UILabel+LayoutBase.m */,
-				D7B6695518C45C9100488AC4 /* JGSubviewHelper.h */,
-				D7B6695618C45C9100488AC4 /* JGSubviewHelper.m */,
+				D7B6698618C50D7700488AC4 /* JGSubviewHelper.h */,
+				D7B6698718C50D7700488AC4 /* JGSubviewHelper.m */,
 			);
 			name = "Layout Categories";
 			sourceTree = "<group>";
@@ -260,14 +260,14 @@
 		D7B6696418C4FF1800488AC4 /* Alias */ = {
 			isa = PBXGroup;
 			children = (
-				D7B6696818C507F200488AC4 /* JGDictionaryAlias.h */,
-				D7B6696918C507F200488AC4 /* JGDictionaryAlias.m */,
-				D7B6695B18C4FB1700488AC4 /* UIView+DictionaryLayoutAlias.h */,
-				D7B6695C18C4FB1700488AC4 /* UIView+DictionaryLayoutAlias.m */,
-				D7B6695E18C4FC9B00488AC4 /* NSString+DictionaryLayoutAlias.h */,
-				D7B6695F18C4FC9B00488AC4 /* NSString+DictionaryLayoutAlias.m */,
-				D7B6696118C4FF1100488AC4 /* NSDictionary+DictionaryLayoutAlias.h */,
-				D7B6696218C4FF1100488AC4 /* NSDictionary+DictionaryLayoutAlias.m */,
+				D7B6697A18C50D6D00488AC4 /* JGDictionaryAlias.h */,
+				D7B6697B18C50D6D00488AC4 /* JGDictionaryAlias.m */,
+				D7B6697C18C50D6D00488AC4 /* NSDictionary+DictionaryLayoutAlias.h */,
+				D7B6697D18C50D6D00488AC4 /* NSDictionary+DictionaryLayoutAlias.m */,
+				D7B6697E18C50D6D00488AC4 /* NSString+DictionaryLayoutAlias.h */,
+				D7B6697F18C50D6D00488AC4 /* NSString+DictionaryLayoutAlias.m */,
+				D7B6698018C50D6D00488AC4 /* UIView+DictionaryLayoutAlias.h */,
+				D7B6698118C50D6D00488AC4 /* UIView+DictionaryLayoutAlias.m */,
 			);
 			name = Alias;
 			sourceTree = "<group>";
@@ -373,24 +373,24 @@
 			files = (
 				D73C1C2918727DCC00E3A769 /* NSLayoutConstraint+Creation.m in Sources */,
 				D73C1C511872ADA900E3A769 /* UILabel+LayoutBase.m in Sources */,
-				D7B6695718C45C9100488AC4 /* JGSubviewHelper.m in Sources */,
+				D7B6698218C50D6D00488AC4 /* JGDictionaryAlias.m in Sources */,
 				D73C1C4D1872AD9D00E3A769 /* NSShadow+Creation.m in Sources */,
 				D73C1BF218727D8200E3A769 /* main.m in Sources */,
 				D73C1C2B18727DCC00E3A769 /* UIInterpolatingMotionEffect+Creation.m in Sources */,
+				D7B6698418C50D6D00488AC4 /* NSString+DictionaryLayoutAlias.m in Sources */,
 				D73C1C2818727DCC00E3A769 /* NSException+Assertion.m in Sources */,
+				D7B6698518C50D6D00488AC4 /* UIView+DictionaryLayoutAlias.m in Sources */,
 				D73C1C2E18727DD400E3A769 /* UIView+LayoutBase.m in Sources */,
 				D73C1C2718727DCC00E3A769 /* NSDictionary+Loading.m in Sources */,
 				D73C1C3C1872843600E3A769 /* NSAttributedString+Creation.m in Sources */,
-				D7B6696018C4FC9B00488AC4 /* NSString+DictionaryLayoutAlias.m in Sources */,
-				D7B6696318C4FF1100488AC4 /* NSDictionary+DictionaryLayoutAlias.m in Sources */,
-				D7B6695D18C4FB1700488AC4 /* UIView+DictionaryLayoutAlias.m in Sources */,
+				D7B6698318C50D6D00488AC4 /* NSDictionary+DictionaryLayoutAlias.m in Sources */,
+				D7B6698818C50D7700488AC4 /* JGSubviewHelper.m in Sources */,
 				D73C1C3118727DDD00E3A769 /* UIView+DictionaryLayout.m in Sources */,
 				D73C1BFC18727D8200E3A769 /* JGViewController.m in Sources */,
 				D73C1C481872AD9400E3A769 /* NSAttributedString+Attributes.m in Sources */,
 				D73C1C2A18727DCC00E3A769 /* UIColor+Creation.m in Sources */,
 				D73C1BF618727D8200E3A769 /* JGAppDelegate.m in Sources */,
 				D73C1C4E1872AD9D00E3A769 /* UIFont+Creation.m in Sources */,
-				D7B6696A18C507F200488AC4 /* JGDictionaryAlias.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
