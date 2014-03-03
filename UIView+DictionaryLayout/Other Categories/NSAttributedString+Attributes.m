@@ -14,6 +14,27 @@
 
 @implementation NSAttributedString (Attributes)
 
++(NSString*)stringForAttributeIdentifier:(NSString*)identifier{
+    if ([identifier isEqualToString:@"font"]) return NSFontAttributeName;
+    else if ([identifier isEqualToString:@"foregroundColor"]) return NSForegroundColorAttributeName;
+    else if ([identifier isEqualToString:@"backgroundColor"]) return NSBackgroundColorAttributeName;
+    else if ([identifier isEqualToString:@"ligature"]) return NSLigatureAttributeName;
+    else if ([identifier isEqualToString:@"kern"]) return NSKernAttributeName;
+    else if ([identifier isEqualToString:@"strikethroughStyle"]) return NSStrikethroughStyleAttributeName;
+    else if ([identifier isEqualToString:@"underlineStyle"]) return NSUnderlineStyleAttributeName;
+    else if ([identifier isEqualToString:@"strokeColor"]) return NSStrokeColorAttributeName;
+    else if ([identifier isEqualToString:@"strokeWidth"]) return NSStrokeWidthAttributeName;
+    else if ([identifier isEqualToString:@"shadow"]) return NSShadowAttributeName;
+    else if ([identifier isEqualToString:@"textEffect"]) return NSTextEffectAttributeName;
+    else if ([identifier isEqualToString:@"link"]) return NSLinkAttributeName;
+    else if ([identifier isEqualToString:@"baselineOffset"]) return NSBaselineOffsetAttributeName;
+    else if ([identifier isEqualToString:@"underlineColor"]) return NSUnderlineColorAttributeName;
+    else if ([identifier isEqualToString:@"strikethroughColor"]) return NSStrikethroughStyleAttributeName;
+    else if ([identifier isEqualToString:@"obliqueness"]) return NSObliquenessAttributeName;
+    else if ([identifier isEqualToString:@"expansion"]) return NSExpansionAttributeName;
+    else return nil;
+}
+
 +(NSObject*)getFontObject:(NSObject*)obj{
     return [UIFont fontWithObject:obj];
 }

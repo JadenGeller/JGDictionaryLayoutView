@@ -10,7 +10,20 @@
 			<key>color</key>
 			<string>#00FF00AA</string>
 			<key>text</key>
-			<string>Hello</string>
+			<dict>
+				<key>foregroundColor</key>
+				<string>green</string>
+				<key>text</key>
+				<string>HELLO</string>
+				<key>link</key>
+				<string>http://google.com</string>
+				<key>obliqueness</key>
+				<integer>2</integer>
+				<key>strikethroughStyle</key>
+				<string>single</string>
+				<key>strokeWidth</key>
+				<integer>2</integer>
+			</dict>
 			<key>position</key>
 			<dict>
 				<key>left</key>

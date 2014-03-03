@@ -7,7 +7,7 @@
 
 #import "UIColor+Creation.h"
 
-const CGFloat kMaxColorValue = 256.0;
+const CGFloat kMaxColorValue = 255.0;
 
 @implementation UIColor (Creation)
 
@@ -76,15 +76,21 @@ const CGFloat kMaxColorValue = 256.0;
             
             return [UIColor colorWithWhite:white alpha:alpha];
         }
+        else{
+            [NSException raise:@"Bad dictionary keys" format:@"Dictionary keys for color of bad type"];
+            return nil;
+
+        }
     }
     else if([object isKindOfClass:[NSString class]]){
         NSString *string = (NSString*)object;
         if ([string hasPrefix:@"#"]) return [UIColor colorWithHex:string];
-        else [UIColor colorWithName:string alpha:1.0];
+        else return [UIColor colorWithName:string alpha:1.0];
     }
-    else if (object) [NSException raise:@"Bad property type" format:@"Property '%@' should be of type 'NSDictionary' or 'NSString' but it is of type '%@'", identifier, object.class];
-    
-    return nil;
+    else{
+        [NSException raise:@"Bad property type" format:@"Property '%@' should be of type 'NSDictionary' or 'NSString' but it is of type '%@'", identifier, object.class];
+        return nil;
+    }
 }
 
 #pragma mark - Private Methods

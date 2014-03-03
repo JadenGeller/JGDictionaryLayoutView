@@ -10,6 +10,8 @@
 
 @interface NSAttributedString (Attributes)
 
++(NSString*)stringForAttributeIdentifier:(NSString*)identifier;
+
 +(NSObject*)getFontObject:(NSObject*)obj;
 //+(NSObject*)getParagraphStyleObject:(NSObject*)obj;
 +(NSObject*)getForegroundColorObject:(NSObject*)obj;

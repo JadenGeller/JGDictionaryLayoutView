@@ -33,27 +33,33 @@
 }
 
 +(NSDictionary*)attributeDictionaryWithDictionary:(NSDictionary*)dictionary{
-    NSMutableDictionary *attributeDictionary;
+    NSMutableDictionary *attributeDictionary = [NSMutableDictionary dictionary];
     
     for (NSString *key in dictionary) {
         
-        NSString *capitalizedKey = [key stringByReplacingCharactersInRange:NSMakeRange(0,1) withString:[[key substringToIndex:1] capitalizedString]];
-        NSString *attributeName = [NSString stringWithFormat:@"NS%@AttributeName",capitalizedKey];
+        NSString *attributeName = [NSAttributedString stringForAttributeIdentifier:key];
         
-        SEL getObject = NSSelectorFromString([NSString stringWithFormat:@"get%@Object:",capitalizedKey]);
-        
-        if ([self respondsToSelector:getObject]) {
-            IMP imp = [self methodForSelector:getObject];
-            NSObject* (*func)(id, SEL, NSObject*) = (void *)imp;
-            attributeDictionary[attributeName] = func(self, getObject, dictionary[key]);
+        if (attributeName) {
+            NSString *capitalizedKey = [key stringByReplacingCharactersInRange:NSMakeRange(0,1) withString:[[key substringToIndex:1] capitalizedString]];
+            //NSString *attributeName = [NSString stringWithFormat:@"NS%@AttributeName",capitalizedKey];
+            
+            SEL getObject = NSSelectorFromString([NSString stringWithFormat:@"get%@Object:",capitalizedKey]);
+            
+            if ([self respondsToSelector:getObject]) {
+                IMP imp = [self methodForSelector:getObject];
+                NSObject* (*func)(id, SEL, NSObject*) = (void *)imp;
+                attributeDictionary[attributeName] = func(self, getObject, dictionary[key]);
+            }
+            else{
+                [NSException raise:@"Unknown attribute" format:@"Attribute '%@' is unknown", key];
+            }
+
         }
-        else{
-            [NSException raise:@"Unknown attribute" format:@"Attribute '%@' is unknown", key];
-        }
-        
     }
     
     return attributeDictionary;
 }
+
+
 
 @end
